@@ -1,0 +1,4 @@
+
+baseGetBorrowURL = "https://kapusta.by/api/internal/v1/public/loans/borrow_request/?page={pageNumber}&page_size={pageSize}&status=active"
+baseGetLendURL = "https://kapusta.by/api/internal/v1/public/loans/lend_request/?page={pageNumber}&page_size={pageSize}&status=active"
+pageSize = 100
