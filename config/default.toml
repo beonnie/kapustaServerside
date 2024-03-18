@@ -6,3 +6,5 @@ lendPageSize = 1000
 fileName = "data.xlsx"
 columns = ["display_name", "percent_amount", "rating", "id", "period_days", "amount"]
 columnsView = ['Имя', 'Сумма возврата', 'Рейтинг', 'ID', 'Срок', 'Сумма займа']
+excelBorrowName = 'borrow.xlsx'
+excelLendName = 'lend.xlsx'
