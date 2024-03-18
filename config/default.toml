@@ -1,4 +1,8 @@
 
-baseGetBorrowURL = "https://kapusta.by/api/internal/v1/public/loans/borrow_request/?page={pageNumber}&page_size={pageSize}&status=active"
-baseGetLendURL = "https://kapusta.by/api/internal/v1/public/loans/lend_request/?page={pageNumber}&page_size={pageSize}&status=active"
-pageSize = 100
+baseGetBorrowURL = "https://kapusta.by/api/internal/v1/public/loans/borrow_request/?page={0}&page_size={1}&status=active"
+baseGetLendURL = "https://kapusta.by/api/internal/v1/public/loans/lend_request/?page={0}&page_size={1}&status=active"
+borrowPageSize =50
+lendPageSize = 1000
+fileName = "data.xlsx"
+columns = ["display_name", "percent_amount", "rating", "id", "period_days", "amount"]
+columnsView = ['Имя', 'Сумма возврата', 'Рейтинг', 'ID', 'Срок', 'Сумма займа']
