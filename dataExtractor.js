@@ -21,7 +21,6 @@ const fetchBorrowData = async () => {
         console.log(dataArr.length)
     } while (next !== null);
     fs.writeFileSync('./data/borrow.json', JSON.stringify(dataArr), { encoding: "utf-8" });
-    return dataArr;
 }
 
 const fetchLendData = async () => {

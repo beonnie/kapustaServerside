@@ -1,17 +1,17 @@
 const express = require('express');
 const app = express();
-const dataExtractor = require('./dataExtractor.js');
+const dataUpdater = require('./dataUpdater.js');
+const stringInject = require('stringinject').default;
+const config = require('config');
 
-
-
-app.get('/kp/v1/getBorrow', async (req, res)=> {
-    res.download('./data/borrow.json');
+app.get('/kp/v1/getBorrow', (req, res)=> {
+    res.download(stringInject(config.get('excelPath'), [config.get('excelBorrowName')]));
 })
 
-app.get('/kp/v1/getLend', async (req, res)=> {
-    res.download('./data/.json');
+app.get('/kp/v1/getLend', (req, res)=> {
+    res.download(stringInject(config.get('excelPath'), [config.get('excelLendName')]));
 })
 
-app.listen(8090, async ()=>{
-    setInterval(()=>{console.log('fsd')}, 5000)
+app.listen(8090, ()=>{
+
 });

@@ -8,3 +8,5 @@ columns = ["display_name", "percent_amount", "rating", "id", "period_days", "amo
 columnsView = ['Имя', 'Сумма возврата', 'Рейтинг', 'ID', 'Срок', 'Сумма займа']
 excelBorrowName = 'borrow.xlsx'
 excelLendName = 'lend.xlsx'
+dataUpdateInterval = 3000
+excelPath = "./{0}"

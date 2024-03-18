@@ -42,8 +42,8 @@ const getLendExcel = () => {
     wb.write(excelLendName);
 }
 
-getLendExcel();
-
+module.exports.getBorrowExcel = getBorrowExcel;
+module.exports.getLendExcel = getLendExcel;
 
 
 
